@@ -1,0 +1,6 @@
+framework module Pods_PhotosView {
+  umbrella header "Pods-PhotosView-umbrella.h"
+
+  export *
+  module * { export * }
+}
