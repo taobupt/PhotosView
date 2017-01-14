@@ -9,6 +9,4 @@ Completed:
 - [x] Required: Add Pull to Refresh
 - [x] Required: Infinite Scrolling
 - [x] Optional: Add Avatar and Publish Dates.
-- [x] Optional: User can search for a movieZoomable Photo Vi
-- [x] Optional: All images fade in as they are loading.
-- [x] Optional: add an icon
+- [x] Optional: Zoomable Photo View
