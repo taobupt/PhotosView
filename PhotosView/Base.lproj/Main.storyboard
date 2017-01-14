@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zH6-sb-6jF" id="XIJ-SM-lX3">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="239"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="239.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="XoL-o5-BnA">
@@ -63,23 +63,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MI7-rX-ugl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="462" width="375" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="N8m-zs-RZZ">
+                                <rect key="frame" x="0.0" y="62" width="375" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rQl-0F-XoP"/>
                     <connections>
                         <outlet property="label" destination="MI7-rX-ugl" id="NtJ-gP-bm1"/>
+                        <outlet property="posterImage" destination="N8m-zs-RZZ" id="xcg-8d-Jxd"/>
+                        <segue destination="uZ3-0j-x5I" kind="modal" identifier="FullScreen" id="It8-7r-LVW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yw-LX-Y3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1138.5" y="150.5"/>
+        </scene>
+        <!--Full Screen Photo View Controller-->
+        <scene sceneID="Xi8-CW-QbC">
+            <objects>
+                <viewController id="uZ3-0j-x5I" customClass="FullScreenPhotoViewController" customModule="PhotosView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q43-4d-XPL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" maximumZoomScale="3" id="Fkr-gE-103">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="D0d-r5-Bnf">
+                                        <rect key="frame" x="2" y="667" width="375" height="158"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oyc-4K-SO5">
+                                                <rect key="frame" x="69" y="26" width="101" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Dissmiss"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="w8y-qI-k1Q">
+                                        <rect key="frame" x="2" y="0.0" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="oyc-4K-SO5" id="kr4-L2-YCF"/>
+                        <outlet property="infoView" destination="D0d-r5-Bnf" id="PJx-sM-nDS"/>
+                        <outlet property="posterImage" destination="w8y-qI-k1Q" id="9gv-lw-Ovk"/>
+                        <outlet property="scrollview" destination="Fkr-gE-103" id="sfO-r3-ecn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnc-qQ-Myj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.5" y="150.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NVc-5g-28Q">

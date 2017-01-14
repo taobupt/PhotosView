@@ -14,6 +14,8 @@
 		2B3559551E1DD37400563D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3559541E1DD37400563D9E /* Assets.xcassets */; };
 		2B3559581E1DD37400563D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3559561E1DD37400563D9E /* LaunchScreen.storyboard */; };
 		2B3559601E1DD3FA00563D9E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35595F1E1DD3FA00563D9E /* PhotosViewController.swift */; };
+		2B5BFB7B1E29DDD50022313A /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BFB7A1E29DDD50022313A /* InfiniteScrollActivityView.swift */; };
+		2B5BFB7D1E29F10E0022313A /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BFB7C1E29F10E0022313A /* FullScreenPhotoViewController.swift */; };
 		7A037C5E885E5BA121D1DFCF /* Pods_PhotosView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A8CE65F50FF09F655E2031 /* Pods_PhotosView.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		2B3559571E1DD37400563D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3559591E1DD37400563D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B35595F1E1DD3FA00563D9E /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		2B5BFB7A1E29DDD50022313A /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
+		2B5BFB7C1E29F10E0022313A /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
 		9DE2FD6E69C22966CFAFDA3F /* Pods-PhotosView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosView.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotosView/Pods-PhotosView.release.xcconfig"; sourceTree = "<group>"; };
 		EFFB423F5E0AF37ED07CAE76 /* Pods-PhotosView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotosView/Pods-PhotosView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,8 @@
 				2B35595F1E1DD3FA00563D9E /* PhotosViewController.swift */,
 				2B0987421E1DDB9900D54457 /* PhotoCell.swift */,
 				2B0987441E1DE5B500D54457 /* DetailViewController.swift */,
+				2B5BFB7A1E29DDD50022313A /* InfiniteScrollActivityView.swift */,
+				2B5BFB7C1E29F10E0022313A /* FullScreenPhotoViewController.swift */,
 			);
 			path = PhotosView;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5BFB7B1E29DDD50022313A /* InfiniteScrollActivityView.swift in Sources */,
 				2B35594E1E1DD37400563D9E /* AppDelegate.swift in Sources */,
 				2B0987431E1DDB9900D54457 /* PhotoCell.swift in Sources */,
 				2B3559601E1DD3FA00563D9E /* PhotosViewController.swift in Sources */,
+				2B5BFB7D1E29F10E0022313A /* FullScreenPhotoViewController.swift in Sources */,
 				2B0987451E1DE5B500D54457 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
